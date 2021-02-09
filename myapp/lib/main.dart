@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'NavigationBar/NavigationBar.dart';
+import 'Dashboard/Dashboard.dart';
 
 void main() {
   runApp(MaterialApp(home: MyApp()));
@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         child: Stack(
           children: [
             NavigationBar(),
+            Dashboard(),
           ],
         ),
       ),
