@@ -2,6 +2,8 @@ import 'package:feather_icons_flutter/feather_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/Dashboard/src/ProjectProgressCard.dart';
+import 'package:myapp/Dashboard/src/ProjectStatisticsCards.dart';
+import 'package:myapp/Dashboard/src/SharedFilesItem.dart';
 import 'package:myapp/Dashboard/src/SubHeader.dart';
 
 import 'src/Tabs.dart';
@@ -64,6 +66,31 @@ class Dashboard extends StatelessWidget {
             SubHeader(
               title: 'Shared Files',
             ),
+            SharedFilesItem(
+              color: Colors.blue,
+              sharedFileName: 'Company Guidelines',
+              members: '28 members',
+              et: '10 Oct 2019',
+              fileSize: '2.3MB',
+            ),
+            SharedFilesItem(
+              color: Colors.amber,
+              sharedFileName: 'Company Policy',
+              members: '30 members',
+              et: '27 Sep 2019',
+              fileSize: '4.2MB',
+            ),
+            SharedFilesItem(
+              color: Colors.red,
+              sharedFileName: 'Wireframes',
+              members: '14 members',
+              et: '08 Oct 2019',
+              fileSize: '1.6MB',
+            ),
+            SubHeader(
+              title: 'Project Statistics',
+            ),
+            ProjectStatisticsCards(),
           ],
         ),
       ),

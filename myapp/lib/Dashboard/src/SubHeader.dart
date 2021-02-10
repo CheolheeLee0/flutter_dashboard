@@ -36,8 +36,6 @@ class SubHeader extends StatelessWidget {
                 color: Colors.black45,
               ),
             ),
-            // https://www.youtube.com/watch?v=zLzF2l4ECeE&list=LL&index=1&t=31s&ab_channel=AmIWorthy
-            // until 15:00
           ],
         ),
       ),
